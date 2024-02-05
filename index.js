@@ -38,7 +38,7 @@ app.use(express.static("uploads"));
 app.use("/auth", authRoute);
 app.use("/posts", postsRoute);
 app.use("/comments", commentsRoute);
-app.length('/', (res, req) => {
+app.get('/', (res, req) => {
     res.send("Hello its /")
 })
 
