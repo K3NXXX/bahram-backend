@@ -38,9 +38,6 @@ app.use(express.static("uploads"));
 app.use("/auth", authRoute);
 app.use("/posts", postsRoute);
 app.use("/comments", commentsRoute);
-app.get('/', (req,res) => {
-    res.send("Hello its /")
-})
 
 app.listen(PORT, () => {
     console.log(`Server start on port ${PORT}`);
